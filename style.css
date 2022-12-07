@@ -563,6 +563,12 @@ article a{
          grid-template-columns: repeat(1, 1fr);
          align-items: flex-start;
     }
+    .mypic img {
+        width: 300px;
+    }
+    .home-text{
+        text-align: center;
+    }
     .home-text h1{
         font-size: 30px;
         line-height: 30px;
@@ -577,6 +583,7 @@ article a{
         font-size: 1rem;
         font-weight: 500;
         margin: 20px 0;
+        text-align: justify;
     }
     .btn1{
         font-size: 30px;
@@ -594,9 +601,13 @@ article a{
         align-items: flex-start;
         grid-gap: 2rem;
     }
+    .about-img {
+        height: 400px;
+    }
     .about-img img{
         max-width: 100%;
         width: 80%;
+        transform: translate(25px, 15px);
     }
     .about-text h2{
         font-size: 30px;
@@ -610,16 +621,20 @@ article a{
         letter-spacing: 1px;
     }
     .about-text p{
-        font-size: 15px;
+        font-size: 16px;
         line-height: 1.5;
-        margin-right: 30px;
+        margin-right: 10px;
         text-align: justify;
     }
+    .button{
+        text-align: center;
+    }
 
+    /*      skills    */
 
     .skills{
         height: auto;
-        padding: 50px;
+        padding: 15px;
     }
     .skills>h2{
         padding: 10px 0 30px 0;
@@ -627,7 +642,7 @@ article a{
     }
     .skills .list{
         flex-direction: column;
-        margin: 10px 0 10px 30px;
+        margin: 10px 0 10px 0px;
     }
     .skills .list h4{
         margin-top: 20px;
@@ -641,17 +656,44 @@ article a{
         width: 100%;
         margin: 0px 0 0 5px;
     }
+    .skills .edu h2 {
+        margin-top: 30px;
+    }
     .skills .access h2{
         margin-top: 20px;
         font-size: 20px;
     }
     .skills .access p{
         font-size: 18px;
-        font-weight: 500;
+        font-weight: 800;
         margin-bottom: 20px;
     }
 
       /* project */
+
+      .carousel-cell {
+        height: 420px;
+        margin-right: 50px;
+        margin-top: 80px;
+        border-radius: 5px;
+      }
+      .flickity-viewport {
+        width: 280px;
+        position: relative;
+        left: -20px;
+    }
+    .flickity-slider {
+        width: 98%;
+    }
+    .carousel {
+        width: 100%;
+    }
+    .flickity-prev-next-button.next {
+        right: 0px !important;
+    }
+    .flickity-prev-next-button.previous {
+        left: -25px !important;
+    }
 
     .project{
         height:auto;
@@ -669,12 +711,15 @@ article a{
         height: 35px;
         border-bottom: 3px solid #ff0759;
     }
+    .project .box{
+        width: 290px;
+    }
 
     .project .box:hover{
         box-shadow: 0 0 0;
     }
     .project .box img{ 
-        width: 100px;
+        width: 290px;
     }
 
 
