@@ -682,9 +682,6 @@ article a{
         position: relative;
         left: -20px;
     }
-    .flickity-slider {
-        width: 84% !important;
-    }
     .carousel {
         width: 100%;
     }
