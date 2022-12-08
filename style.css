@@ -678,12 +678,12 @@ article a{
         border-radius: 5px;
       }
       .flickity-viewport {
-        width: 260px;
+        width: 310px;
         position: relative;
         left: -20px;
     }
     .flickity-slider {
-        width: 98%;
+        width: 84% !important;
     }
     .carousel {
         width: 100%;
@@ -712,10 +712,10 @@ article a{
         border-bottom: 3px solid #ff0759;
     }
     .project .box{
-        width: 258px;
+        width: 300px;
     }
     .project .box img{ 
-        width: 258px;
+        width: 300px;
     }
     .project .box:hover{
         box-shadow: 0 0 0;
