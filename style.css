@@ -678,7 +678,7 @@ article a{
         border-radius: 5px;
       }
       .flickity-viewport {
-        width: 280px;
+        width: 260px;
         position: relative;
         left: -20px;
     }
@@ -712,15 +712,15 @@ article a{
         border-bottom: 3px solid #ff0759;
     }
     .project .box{
-        width: 290px;
+        width: 258px;
     }
-
+    .project .box img{ 
+        width: 258px;
+    }
     .project .box:hover{
         box-shadow: 0 0 0;
     }
-    .project .box img{ 
-        width: 290px;
-    }
+    
 
 
     .contact h2{
