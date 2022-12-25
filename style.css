@@ -19,7 +19,6 @@
 }
 body{
     background: var(--bg-color);
-    color: var(--text-color);
 }
 
 /*         header          */
@@ -28,7 +27,7 @@ header{
     width: 100%;
     left: 0;
     top: 0;
-    z-index: 1;
+    z-index: 3;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,11 +35,15 @@ header{
     padding: 15px 50px;
 }
 .logo{
-    font-size: 1.9rem;
+    font-size: 30px;
     font-weight: 800;
     color: var(--text-color);
     font-family: 'Satisfy', cursive; 
     letter-spacing: 3px;
+    text-decoration: none;
+}
+.logo:hover{
+    color: var(--main-color);
 }
 span{
     color: var(--main-color);
@@ -56,6 +59,10 @@ span{
     font-weight: 800;
     font-size: 1.2rem;
     padding: 10px 20px;
+    text-decoration: none;
+}
+.nav-list a:hover{
+    color: var(--main-color);
 }
 .nav-list a::after{
     content: '';
@@ -70,11 +77,6 @@ span{
 .nav-list a:hover::after{
     width: 100%;
 }
-/* .nav-icon img{
-    width: 20px;
-    cursor: pointer;
-    display: none;
-} */
 
 /*            section           */
 section{
@@ -187,14 +189,8 @@ article a{
     line-height: 1.2;
     margin-bottom: 2rem;
 }
-.about-text h5{
-    color: var(--second-color);
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    letter-spacing: 2px;
-}
 .about-text p{
-    font-size: 20px;
+    font-size: 22px;
     max-width: 570px;
     line-height: 1.8;
     color: var(--second-color);
@@ -213,6 +209,7 @@ article a{
     color: var(--text-color );
     background: var(--main-color);
     border-radius: 30px;
+    font-weight: 600;
 }
 .button .btn:hover{  
     background: transparent;
@@ -237,6 +234,7 @@ article a{
     text-align: center;
     padding: 10px 0 30px 0;
     font-size: 40px;
+    font-weight: 600;
 }
 .skills i{
     color: #e82969;
@@ -253,6 +251,7 @@ article a{
     border-bottom: 3px solid #e82969;
     display: inline-block;
     margin-bottom: 10px;
+    font-weight: 600;
 }
 .skills .list li{
     color: #000;
@@ -285,6 +284,7 @@ article a{
 .skills .access h2{
     color: #000;
     font-size: 25px;
+    font-weight: 600;
 }
 .skills .access p{
     margin-top: 20px;
@@ -299,6 +299,8 @@ article a{
 .skills .edu h2{
     color: #000;
     font-size: 25px;
+    font-weight: 600;
+
 }
 .skills .edu p{
     color: #000;
@@ -318,29 +320,10 @@ article a{
 }
 
 /*          project         */
-
-/* flickerty */
-  
- .carousel-cell {
-    height: 420px;
-    margin-right: 50px;
-    margin-top: 80px;
-    border-radius: 5px;
-  }
-  .flickity-viewport {
-    width: 1300px;
-    position: relative;
-    left: 60px;
-}
- 
  
 .project{
     background-color: #adadad;
     width: 100%;
-    /* height: 100vh; */
-    /* display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; */
     position: relative;
     align-items: center;
     padding: 30px 30px;
@@ -350,27 +333,12 @@ article a{
     background-position: left center;
     background-size: cover;
 }
-.project .box{
-    width: 300px;
-    height: 300px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-    border-radius: 3px ;
-}
-.project .box:hover{
-    transition: 0.3s ease;
-    color: red;
-    box-shadow: 0 0 0;
-    background:linear-gradient(transparent , #e82969 100%);
-}
 .project div p{
     font-size: 20px;
     text-align: center;
-    color: black;
+    color: red;
     margin: 10px;
     font-weight: 800;
-}
-.project div p:first-child{
-    text-decoration: underline;
 }
 .project h2{
     width: 95%;
@@ -381,6 +349,7 @@ article a{
     font-size: 40px;
     margin-top: 30px;
     margin-bottom: 30px;
+    font-weight: 600;
 }
 #projectbox{
     border: 1px solid black;
@@ -401,7 +370,26 @@ article a{
     opacity: 1;
     border-radius: 3px ;
 }
-
+/*  */
+.project-no-name span{
+    background-color: #b0b0b0;
+    color: #ff0055;
+    padding: 3px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.project-head{
+    color: #ffffff !important;
+    font-weight: 600 !important;
+    letter-spacing: 2px;
+}
+/*  */
+/* carousel */
+.carousel-inner {
+    width: 50% !important;
+    left: 300px;
+}
+/* carousel */
 
 
 /*        contact        */
@@ -410,11 +398,14 @@ article a{
     background: #161616;
     margin: 0;
     padding: 20px 0 0 0;
+    font-weight: 600;
 }
 .contact h2{color: #fe6195;
     text-align: center;
     font-size: 40px;
     padding: 10px;
+    font-weight: 600;
+
 }
 .contact .contact1{
     display: flex;
